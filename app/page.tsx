@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-background p-4 dark">
+    <main className="min-h-screen bg-background text-blue-100 p-4 dark">
       {currentStep === 'form' ? (
         <StoryForm onSubmit={handleFormSubmit} />
       ) : (
