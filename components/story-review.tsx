@@ -170,6 +170,7 @@ A: ${qa.answer}
     );
   }
 
+  
   if (error) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4">
@@ -249,7 +250,7 @@ A: ${qa.answer}
       <Dialog open={shareModalOpen} onOpenChange={setShareModalOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Share Your Story</DialogTitle>
+            <DialogTitle>Publish Your Story</DialogTitle>
             <DialogDescription>
               Choose how you'd like to share your transformational journey
             </DialogDescription>

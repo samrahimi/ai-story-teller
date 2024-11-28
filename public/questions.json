@@ -1,7 +1,8 @@
 
 {
-    "title": "Mindscape Story Teller",
-    "subtitle": "Want to share your story? Mindscape just hired a brilliant AI storyteller to help you share your journey with friends and loved ones... just answer a few quick questions about your experience and watch it come to life!",
+    "banner_url": "/mindscape-header.png",
+    "title": "TELL YOUR STORY...",
+    "subtitle": "This app lets you create and share your authentic story of personal growth and transformation, no matter how good a writer you are or what languages you speak. Just answer a few quick questions and MindBot takes care of the rest.",
     "questions": [
       {
         "id": "challenge",

@@ -34,6 +34,7 @@ const StoryForm = ({
   const [isLoading, setIsLoading] = useState(true);
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
+  const [banner_url, setBannerUrl] = useState("");
 
   const [error, setError] = useState<string | null>(null);
 
@@ -71,7 +72,7 @@ const StoryForm = ({
         setQuestions(config.questions);
         setTitle(config.title)
         setSubtitle(config.subtitle)
-
+        setBannerUrl(config.banner_url)
         // Initialize answers based on fetched questions
         const initialAnswers = config.questions.reduce((acc, q) => ({
           ...acc,
@@ -109,7 +110,7 @@ const StoryForm = ({
 
   // Save form data to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('storyFormData', JSON.stringify(formData));
+    //localStorage.setItem('storyFormData', JSON.stringify(formData));
   }, [formData]);
 
   const handleInputChange = (field: string, value: string) => {
@@ -128,6 +129,10 @@ const StoryForm = ({
         [field]: value,
       }));
     }
+
+
+    localStorage.setItem('storyFormData', JSON.stringify(formData));
+
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -171,13 +176,15 @@ const StoryForm = ({
     <div className="p-4 mt-4 flex justify-center items-center h-screen">
       <Card>
         <CardContent className="mx-auto">
+          <img src={banner_url} />
+
           <h1 className="">{title}</h1>
-          <h3 className="mb-5">{subtitle}</h3>
+          <p className="mb-5 font-semibold">{subtitle}</p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Personal Information Section */}
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold">Personal Information</h2>
+              <h2 className="text-2xl font-bold">ABOUT YOU...</h2>
               <div className="grid gap-4">
                 <div>
                   <Label htmlFor="name">Name</Label>
@@ -219,7 +226,7 @@ const StoryForm = ({
 
             {/* Questions Section */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold">Your Story</h2>
+              <h2 className="text-2xl font-bold">ABOUT YOUR JOURNEY</h2>
               {questions.map((question) => (
                 <div key={question.id} className="space-y-2">
                   <Label htmlFor={question.id}>{question.text}</Label>
@@ -257,7 +264,7 @@ const StoryForm = ({
             </div>
 
             <Button type="submit" className="w-full">
-              Submit Your Story
+              Create With MindBot...
             </Button>
           </form>
         </CardContent>
