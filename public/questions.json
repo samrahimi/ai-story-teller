@@ -13,31 +13,31 @@
         "id": "impact",
         "text": "How did this challenge affect your mindset and daily life? What was the point at which you decided to make a positive change and overcome it",
         "type": "long",
-        "placeholder": "Every time a meeting was scheduled, I'd mysteriously develop a 'dental emergency.' Eventually I suffered an overdose of dental anesthetic due to repeated procedures and almost died..."
+        "placeholder": "Every time a meeting was scheduled, I'd mysteriously develop a 'dental emergency.' Eventually my dentist stopped taking my calls and I ended up with a REAL dental emergency."
       },
       {
         "id": "first_steps",
         "text": "What are some techniques or workshops you tried that you thought might help, but ended up being disappointing?",
         "type": "long",
-        "placeholder": "First, I admitted to myself, to another human being, and to my dentist that I had a problem. Then I tried therapy, but they refused to explain how cigars and Oedipal fantasies were relevant to my fear of public speaking, so I refused to pay for the session and never went back! Then my dentist stopped taking my calls, and that was when I hit rock bottom..."
+        "placeholder": "First, I admitted to myself, to another human being, and to my dentist that I had a problem... And then I tried therapy, but the therapist told me I was totally normal..."
       },
       {
         "id": "support",
-        "text": "Is there anything you tried that DID help you to overcome this challenge, and what about it do you feel made the most difference?",
+        "text": "Is there anything you tried that DID help you to overcome this challenge?",
         "type": "long",
-        "placeholder": "I was checking Twitter while at the ER with a (real) dental emergency, when my old friend Mike posted from Mt Everest, saying the Mindscape Seminar cured his fear of heights. Then he streamed his descent live. So I was slightly intrigued... The best part? No awkward phone calls convincing your friends and family to sign up, their AI does it all for you!"
+        "placeholder": "I was checking Twitter while at the ER with a (real) dental emergency, when my old friend Mikey who was terrified of heights posted pics from Mt Everest! Said Mindscape changed his life. So I gave it a try..."
       },
       {
         "id": "breakthrough",
         "text": "What was your biggest breakthrough moment - when things finally felt like they \"clicked\" for you?",
         "type": "long",
-        "placeholder": "I was cured before actually taking the seminar, about 5 minutes after that tweet, when Mikey fell off a 7000 foot cliff and spent his last two minutes talking about the lovely view! After that, I felt like an idiot for worrying about insignificant things, and put in my name to run for Congress..."
+        "placeholder": "It was in this little town in central America, when I met Will Goodey, founder of MindScape... Oh, and the seminar was great too"
       },
       {
         "id": "custom_instructions",
         "text": "If you have any special requests for how I should tell your story, let me know!",
         "type": "long",
-        "placeholder": "Write a brief synopsis in English, and then tell the whole story in Mandarin Chinese so that I can convince my hard working immigrant parents to sign up too!"
+        "placeholder": "Use a snarky, irreverent tone because that is usually what my posts are like!"
       }
     ]
   }

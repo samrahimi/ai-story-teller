@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-background text-blue-100 p-4 dark">
+    <main className="min-h-screen  text-blue-100 p-4 bg-card">
       {currentStep === 'form' ? (
         <StoryForm           apiKey="hamster"
         apiUrl="/questions.json"

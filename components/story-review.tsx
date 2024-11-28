@@ -181,9 +181,9 @@ A: ${qa.answer}
   }
 
   return (
-    <div className="p-4 flex justify-center items-center min-h-screen">
+    <div className="p-4 flex justify-center items-center min-h-screen bg-card">
       <Card>
-        <CardContent className="mx-auto p-6 border-blue-100">
+        <CardContent className="mx-auto p-6 border-blue-100 h-screen">
           <div className="prose max-w-none markdown-body">
             <ReactMarkdown>{story}</ReactMarkdown>
           </div>
@@ -260,7 +260,7 @@ A: ${qa.answer}
             <Button
               variant="outline"
               className="w-full"
-              onClick={() => window.open(generateShareableLink(), '_blank')}
+              onClick={() => alert("Coming Soon...")}
             >
               <Share2 className="mr-2 h-4 w-4" />
               Share on Facebook
@@ -268,13 +268,15 @@ A: ${qa.answer}
             <Button
               variant="outline"
               className="w-full"
-              onClick={() =>
+              onClick={() => {
+                const formattedText = 
+              (story.replaceAll("#", "").replaceAll(" ", "%20"));
                 window.open(
-                  `https://wa.me/?text=${encodeURIComponent(story)}`,
+                  `https://wa.me/?text=${formattedText}`,
                   '_blank'
-                )
-              }
-            >
+                );
+              }}
+                          >
               Share on WhatsApp
             </Button>
             <Button
