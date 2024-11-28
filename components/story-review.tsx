@@ -41,9 +41,9 @@ const StoryReview = ({ formData, onBack, onApprove }) => {
     
     ## CONTEXT
 
-    All of the users are graduates of the "MindScape" program, an affordable, life changing set of workshops and seminars offered by Will Goodey. They are very excited to tell others about this opportunity for transformation - this app has been created by MindScape staff and is offered as a tool for the user to help inspire others in their life who may be skeptical about the program and its benefits. 
+    All of the users are graduates of the "Mindscape" program, an affordable, life changing set of workshops and seminars offered by Will Goodey. They are very excited to tell others about this opportunity for transformation - this app has been created by Mindscape staff and is offered as a tool for the user to help inspire others in their life who may be skeptical about the program and its benefits. 
     
-    Therefore: while being subtle and not at all spammy or pushy, please capitalize on anything they may have said in their questionnaire about the program and how it changed their life - and always, as a postscript to the main story, add a call to action that tells the reader "You can overcome the challenges in YOUR life too - Go to https://MindScape.edu/free-seminar to book a free introductory workshop". But adjust that text so it speaks to people facing the same challenges and of similar social / cultural persuasion as the one telling the story... That final paragraph should be in italics so its clear that the user did not write it - it was added by the story telling tool. 
+    Therefore: while being subtle and not at all spammy or pushy, please capitalize on anything they may have said in their questionnaire about the program and how it changed their life - and always, as a postscript to the main story, add a call to action that tells the reader "You can overcome the challenges in YOUR life too - Go to https://Mindscape.edu/free-seminar to book a free introductory workshop". But adjust that text so it speaks to people facing the same challenges and of similar social / cultural persuasion as the one telling the story... That final paragraph should be in italics so its clear that the user did not write it - it was added by the story telling tool. 
     
     ## Formatting and Narrative Structure - Writing Style Guidelines
     Format the story in simple markdown, with an appropriate title as the main header and then perhaps a few subheaders along the way (but not too many) if you think it will keep things organized. The story should NOT  read like an interview transcript, but like an inspirational first person story of triumph over adversity - think John Krakauer meets Bill Wilson! The story should be told in a highly flowing, authentic style that is structured as a compelling narrative, not structured like the questionnaire - the only purpose of the questions is to help the user provide the key points of their story, not to structure the end result
@@ -184,38 +184,36 @@ A: ${qa.answer}
     <div className="p-4 flex justify-center items-center min-h-screen bg-card">
       <Card>
         <CardContent className="mx-auto p-6 border-blue-100 h-screen">
-          <div className="prose max-w-none markdown-body">
+          <div className="prose markdown-body">
             <ReactMarkdown>{story}</ReactMarkdown>
           </div>
 
           <div className="mt-8 space-y-4">
-            <div className="flex flex-wrap gap-4">
               <Button
                 onClick={() => setShareModalOpen(true)}
-                className="flex items-center gap-2"
+                className="w-full"
               >
                 <CheckCircle2 className="w-4 h-4" />
-                Approve & Share
+                &nbsp;Save & Publish
               </Button>
 
               <Button
                 variant="outline"
                 onClick={() => setIsRevisionModalOpen(true)}
-                className="flex items-center gap-2"
+                className="w-full"
               >
                 <MessageSquarePlus className="w-4 h-4" />
-                Request Changes
+                &nbsp;Edit Story
               </Button>
 
               <Button
                 variant="outline"
                 onClick={onBack}
-                className="flex items-center gap-2"
+                className="w-full"
               >
                 <ArrowLeft className="w-4 h-4" />
-                Start Over
+                &nbsp;Start Over
               </Button>
-            </div>
           </div>
         </CardContent>
       </Card>
@@ -268,14 +266,8 @@ A: ${qa.answer}
             <Button
               variant="outline"
               className="w-full"
-              onClick={() => {
-                const formattedText = 
-              (story.replaceAll("#", "").replaceAll(" ", "%20"));
-                window.open(
-                  `https://wa.me/?text=${formattedText}`,
-                  '_blank'
-                );
-              }}
+              onClick={() => alert("Coming Soon...")}
+
                           >
               Share on WhatsApp
             </Button>

@@ -1,7 +1,7 @@
 
 {
-    "title": "MindScape Story Teller",
-    "subtitle": "Want to share your story? MindScape just hired a brilliant AI storyteller to help you share your journey with friends and loved ones... just answer a few quick questions about your experience and watch it come to life!",
+    "title": "Mindscape Story Teller",
+    "subtitle": "Want to share your story? Mindscape just hired a brilliant AI storyteller to help you share your journey with friends and loved ones... just answer a few quick questions about your experience and watch it come to life!",
     "questions": [
       {
         "id": "challenge",
@@ -31,7 +31,7 @@
         "id": "breakthrough",
         "text": "What was your biggest breakthrough moment - when things finally felt like they \"clicked\" for you?",
         "type": "long",
-        "placeholder": "It was in this little town in central America, when I met Will Goodey, founder of MindScape... Oh, and the seminar was great too"
+        "placeholder": "It was in this little town in central America, when I met Will Goodey, founder of Mindscape... Oh, and the seminar was great too"
       },
       {
         "id": "custom_instructions",
