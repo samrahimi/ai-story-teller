@@ -20,7 +20,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-blue-100 p-4 dark">
       {currentStep === 'form' ? (
-        <StoryForm onSubmit={handleFormSubmit} />
+        <StoryForm           apiKey="hamster"
+        apiUrl="/questions.json"
+        onSubmit={handleFormSubmit} />
       ) : (
         <StoryReview
           formData={formData}
